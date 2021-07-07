@@ -14,12 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    
-    $name = "Carmen";
+    // pass variable to the view with the function compact
+    // $name = "Carmen";
+    // return view('home', compact('name'));
 
-
-
-    return view('home', compact('name'));
+    $data = [
+        'name'=> 'Carmen',
+        'lastname' =>'Galán'
+    ];
+    return view('home', $data);
 });
 Route::get('/about', function () {  //new route created 
     return 'About me';

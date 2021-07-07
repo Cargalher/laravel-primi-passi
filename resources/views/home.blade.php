@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel {{ $name }}
+                    Laravel {{ $name }} {{ $lastname }}
                 </div>
 
                 <div class="links">
