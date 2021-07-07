@@ -20,7 +20,15 @@ Route::get('/', function () {
 
     $data = [
         'name'=> 'Carmen',
-        'lastname' =>'Galán'
+        'lastname' =>'Galán',
+        'details' => [
+            'About',
+            'Portfolio',
+            'Gallery',
+            'Events',
+            'Contact',
+            'Social'
+        ]
     ];
     return view('home', $data);
 });
